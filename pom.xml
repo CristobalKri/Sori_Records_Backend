@@ -48,6 +48,8 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+			<version>1.18.24</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -73,7 +75,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-                	<release>21</release> <!-- Set the target to 21 -->
+                	<release>21<release> <!-- Set the target to 21 -->
 					<annotationProcessorPaths>
 						<path>
 							<groupId>org.projectlombok</groupId>
