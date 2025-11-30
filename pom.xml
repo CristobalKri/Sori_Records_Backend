@@ -59,22 +59,25 @@
 
     <build>
         <plugins>
+            <!-- Upgrade to the latest maven-compiler-plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.10.1</version> <!-- Latest version -->
                 <configuration>
                     <!-- Use 'release' for compatibility with Java 21 -->
-                    <release>21</release>
+                    <release>21</release> <!-- Enforces Java 21 compatibility -->
                     <annotationProcessorPaths>
                         <annotationProcessorPath>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>1.18.24</version> <!-- Lombok version here as well -->
+                            <version>1.18.42</version> <!-- Match the Lombok version here -->
                         </annotationProcessorPath>
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
+
+            <!-- Spring Boot Maven Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
